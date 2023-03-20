@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Co-Founder | Online Co-Founder Matching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+
+<body class="font-sans bg-white text-gray-900">
+    <!-- Header -->
+    <header id="header" class="fixed top-0 z-50 w-full bg-opacity-60 backdrop-blur-md">
+        <div class="container mx-auto px-4 py-3 md:px-8 md:py-4">
+            <nav class="flex items-center justify-between">
+                <!-- Logo and Company Name -->
+                <a href="/" class="flex items-center font-bold text-xl">
+                    <span class="text-indigo-600 text-2xl">🚀</span> Find A Co-Founder
+                </a>
+
+                <!-- Hamburger Menu (Visible on small screens) -->
+                <button class="md:hidden flex items-center" id="hamburger-button">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M2 4a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm1 5a1 1 0 100 2h14a1 1 0 100-2H3z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+
+                <!-- Navigation Menu -->
+                <ul class="hidden md:flex items-center space-x-6" id="main-menu">
+                    <li><a href="#product-features" class="text-gray-700 hover:text-gray-900 font-bold">ℹ️ About</a></li>
+                    <li><a href="#pricing" class="text-gray-700 hover:text-gray-900 font-bold">💰 Pricing</a></li>
+                    <li><a href="#faqs" class="text-gray-700 hover:text-gray-900 font-bold">❓ FAQs</a></li>
+                    <li><a href="/contact" class="text-gray-700 hover:text-gray-900 font-bold"> 📞 Contact</a></li>
+                </ul>
+
+                <!-- CTA Button -->
+                
+                <div class="flex justify-end">
+                    <!-- Login Button -->
+                    <a href="#login" class="bg-white hidden md:inline-block text-indigo-600 hover:text-indigo-800 font-bold border-2 border-indigo-600 py-2 px-4 rounded-full mr-4">🔑 Login</a>
+                    <!-- CTA Button -->
+                    <a href="https://app.findacofounder.online/"
+                        class="hidden md:inline-block text-white bg-indigo-600 hover:bg-indigo-700 py-2 px-4 rounded-full shadow-lg">
+                        Get Started
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <ul class="hidden space-y-4 bg-white p-4 border-t border-gray-200" id="mobile-menu">
+            <li><a href="#about" class="block text-gray-700 hover:text-gray-900 font-bold">ℹ️ About</a></li>
+            <li><a href="#pricing" class="block text-gray-700 hover:text-gray-900 font-bold">💰 Pricing</a></li>
+            <li><a href="#faqs" class="block text-gray-700 hover:text-gray-900 font-bold">❓ FAQs</a></li>
+            <li><a href="/contact" class="block text-gray-700 hover:text-gray-900 font-bold">📞 Contact</a></li>
+            <li>
+                <a href="#login" class="bg-white block text-indigo-600 hover:text-indigo-800 font-bold border-2 border-indigo-600 py-2 px-4 rounded-full mr-4">🔑 Login</a>
+            </li>
+            <li><a href="#signup"
+                    class="block text-white bg-indigo-600 hover:bg-indigo-700 py-2 px-4 rounded-full shadow-lg">
+                    Get Started
+                </a></li>
+                
+        </ul>
+    </header>
+
+    <!-- Hero Block -->
+    <section class="min-h-screen text-gray-900 pt-32">
+        <div class="container mx-auto px-4 h-full">
+            <div class="h-full flex items-center justify-center">
+                <div class="grid items-center grid-cols-1 gap-12 w-full lg:grid-cols-2">
+                    <!-- Heading and Product Description -->
+                    <div>
+                        <h1 class="text-4xl md:text-6xl font-bold text-indigo-600">Find Your Perfect Co-Founder in
+                            Minutes</h1>
+                        <p class="text-lg md:text-xl mt-6 mb-8">
+                            Our AI-powered platform matches you with the ideal co-founder based on skills, experience,
+                            and goals.
+                            Discover the perfect partner to skyrocket your startup's success.
+                        </p>
+                        <!-- Social Proof -->
+                        <div class="flex items-center space-x-2">
+                            <img src="product_hunt_badge.png" alt="Product Hunt Badge" class="w-8 h-8">
+                            <span class="text-sm md:text-md">Featured on Product Hunt</span>
+                        </div>
+                        <!-- CTA Buttons -->
+                        <div class="mt-8">
+                            <a href="#signup"
+                                class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700">
+                                Get Started for Free
+                            </a>
+                            <a href="#learn-more"
+                                class="text-indigo-600 font-bold py-3 px-8 ml-4 border border-indigo-600 rounded-full hover:border-indigo-800">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product Visual -->
+                    <div>
+                        <img src="images/productVisual.png" alt="Product Visual" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Demo -->
+    <section id="product-demo" class="bg-gradient-to-r from-indigo-500 to-indigo-700 py-10 sm:py-16 lg:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Experience Our Platform in Action</h2>
+                <p class="mt-4 text-lg md:text-xl text-white">Get a hands-on feel for our AI-powered co-founder matching
+                </p>
+            </div>
+            <div class="flex items-center justify-center">
+                <!-- Replace 'demo-video.mp4' with your actual video file, or use an embedded video from YouTube, Vimeo, etc. -->
+                <video class="w-full md:w-4/5 lg:w-3/4 xl:w-2/3 rounded-lg shadow-lg" src="demo-video.mp4" controls
+                    poster="video-thumbnail.jpg"></video>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#signup"
+                    class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-100">
+                    Try It for Free
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Agitation -->
+    <section id="problem-agitation" class="py-10 sm:py-16 lg:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Finding a Co-Founder is Hard</h2>
+                <p class="mt-4 text-lg md:text-xl text-gray-700">Building a successful startup can be an uphill battle
+                    without the right partner</p>
+            </div>
+            <div class="grid gap-8 lg:grid-cols-3">
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900">🧩 Mismatched Skills</h3>
+                    <p class="mt-4 text-gray-700">Finding someone who complements your skills can be a daunting task,
+                        leading to wasted time and resources.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900">🔀 Incompatible Goals</h3>
+                    <p class="mt-4 text-gray-700">Partners with different visions can cause conflicts and hinder the
+                        startup's growth and success.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900">🚀 Lost Opportunities</h3>
+                    <p class="mt-4 text-gray-700">Without the right co-founder, you might miss out on opportunities to
+                        scale and achieve your startup's full potential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- High-level Solution -->
+<section id="high-level-solution" class="bg-white py-10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-gray-900">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold">Find Your <span class="text-indigo-600">Perfect Co-Founder</span> in Minutes</h2>
+        </div>
+        <div class="w-full h-full mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
+            <div class="grid grid-cols-2 gap-6">
+                <div class="space-y-4 flex flex-col justify-center">
+                    <!-- Tab titles and content go here -->
+            <div>
+              <button class="text-xl md:text-2xl font-bold focus:outline-none w-full text-left" id="step1-title">1️⃣ Take the Survey</button>
+              <div id="step1-content" class="hidden">
+                <p class="mt-4">Complete a short survey that helps us understand your skills, experience, and goals.</p>
+              </div>
+            </div>
+            <div>
+              <button class="text-xl md:text-2xl font-bold focus:outline-none w-full text-left" id="step2-title">2️⃣ AI-Powered Matching</button>
+              <div id="step2-content" class="hidden">
+                <p class="mt-4">Our platform uses advanced AI algorithms to match you with the best co-founder candidates.</p>
+              </div>
+            </div>
+            <div>
+              <button class="text-xl md:text-2xl font-bold focus:outline-none w-full text-left" id="step3-title">3️⃣ Meet Your Perfect Co-Founder</button>
+              <div id="step3-content" class="hidden">
+                <p class="mt-4">Connect with your matches and start building your dream startup together!</p>
+              </div>
+            </div>
+          </div>
+           <div class="relative h-96">
+                    <div id="step1-image" class="absolute top-0 left-0 w-full h-full">
+                        <img src="images/social-media-user.png" alt="Step 1 Image" class="w-full h-full object-cover">
+                    </div>
+                    <div id="step2-image" class="absolute top-0 left-0 w-full h-full hidden">
+                        <img src="images/user-rating.png" alt="Step 2 Image" class="w-full h-full object-cover">
+                    </div>
+                    <div id="step3-image" class="absolute top-0 left-0 w-full h-full hidden">
+                        <img src="images/business-team.png" alt="Step 3 Image" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+<!-- Social Proof 1 -->
+<section id="social-proof-1" class="bg-gray-100 py-10 sm:py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-gray-900">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold">Unlock the <span class="text-indigo-600">Potential</span> of Your Startup</h2>
+            <p class="mt-4 text-xl">See how our platform can help you build a successful startup with the right co-founder.</p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="text-center">
+                <img src="images/successful_startups.png" alt="Successful Startups" class="w-32 mx-auto mb-4">
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Successful Startups</h3>
+                <p>Our platform is designed to maximize the chances of your startup's success by finding the perfect co-founder match.</p>
+            </div>
+            <div class="text-center">
+                <img src="images/expertise.png" alt="Expertise" class="w-32 mx-auto mb-4">
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Complementary Expertise</h3>
+                <p>Find co-founders who have complementary skills and expertise to create a well-rounded and powerful team.</p>
+            </div>
+            <div class="text-center">
+                <img src="images/teamwork.png" alt="Teamwork" class="w-32 mx-auto mb-4">
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Synergy & Teamwork</h3>
+                <p>Discover like-minded individuals who share your values and vision, fostering a strong sense of teamwork and collaboration.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Features -->
+<section id="product-features" class="bg-white py-10 sm:py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-gray-900">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold">Unlock Your <span class="text-indigo-600">Startup's Potential</span> with the Perfect Co-Founder</h2>
+            <p class="mt-4 text-xl">Discover how our platform delivers value through unique features tailored to your needs.</p>
+        </div>
+        <div class="grid gap-8 max-w-6xl mx-auto space-y-8">
+            <!-- Feature 1 -->
+            <div class="grid gap-6 sm:grid-cols-2 items-center justify-center">
+                <div class="text-center sm:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Achieve Efficient Matchmaking with Our AI-Powered Algorithm</h3>
+                    <p>Find the perfect co-founder quickly and accurately by leveraging our advanced AI-powered matching system.</p>
+                    <button class="bg-indigo-600 text-white px-6 py-2 rounded-md mt-6">Learn More</button>
+                </div>
+                <div>
+                    <img src="images/user-rating.png" alt="Feature 1 Visual" class="w-full h-auto mx-auto">
+                </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="grid gap-6 sm:grid-cols-2 items-center justify-center">
+                <div>
+                    <img src="images/user-rating.png" alt="Feature 2 Visual" class="w-full h-auto mx-auto">
+                </div>
+                <div class="text-center sm:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Enhance Collaboration with Intuitive Communication Tools</h3>
+                    <p>Stay connected with your co-founder and build your startup seamlessly using our built-in communication features.</p>
+                    <button class="bg-indigo-600 text-white px-6 py-2 rounded-md mt-6">Learn More</button>
+                </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="grid gap-6 sm:grid-cols-2 items-center justify-center">
+                <div class="text-center sm:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Accelerate Growth with Comprehensive Startup Resources</h3>
+                    <p>Access a wealth of resources designed to help you navigate the startup landscape and accelerate your growth.</p>
+                    <button class="bg-indigo-600 text-white px-6 py-2 rounded-md mt-6">Learn More</button>
+                </div>
+                <div>
+                    <img src="images/user-rating.png" alt="Feature 3 Visual" class="w-full h-auto mx-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Offer Section -->
+<section id="offer">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="w-full max-w-5xl mx-auto bg-indigo-600 text-white p-6 rounded-lg shadow-md">
+        <div class="text-center">
+          <h2 class="text-3xl md:text-4xl font-bold">🚀 Seize The Opportunity and <span class="text-white">Build Your Dream Startup</span></h2>
+          <p class="mt-4 text-xl">No more endless searching, no more wasted time. The perfect co-founder is just one click away! 💯</p>
+          
+          <div class="mt-8">
+            <h3 class="text-2xl font-bold mb-2">Why wait?</h3>
+            <ul class="list-none pl-0">
+              <li class="mb-2">✅ Find the perfect co-founder in minutes, not months</li>
+              <li class="mb-2">🧠 Leverage advanced AI algorithms for personalized matching</li>
+              <li class="mb-2">🤝 Connect with like-minded entrepreneurs to build a strong team</li>
+              <li class="mb-2">⏱️ Save time and resources in your startup journey</li>
+            </ul>
+          </div>
+  
+          <!-- CTA Button -->
+          <div class="text-center mt-8">
+            <button class="bg-white text-indigo-600 font-bold py-2 px-4 rounded focus:outline-none">Get Started Now 🎉</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+    <!-- Social Proof 2 -->
+    <section id="social-proof-2">
+        <!-- Your social proof 2 code here -->
+    </section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-10 sm:py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-gray-900">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold">Powerful Solutions for <span class="text-indigo-600">Every Stage</span> of Your Startup Journey</h2>
+      </div>
+      
+      <div class="flex justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Free Plan -->
+          <div class="bg-white p-8 rounded-lg shadow-md ">
+            <div class="text-center">
+              <h3 class="text-2xl font-bold">Find Your Co-Founder</h3>
+              <p class="text-xl text-indigo-600">Free</p>
+              <ul class="list-none pl-0 mt-4">
+                <li class="mb-2">🔍 AI-Powered Co-Founder Matching</li>
+                <li class="mb-2">🤝 Connect with Entrepreneurs</li>
+                <li class="mb-2">💡 Build Your Dream Team</li>
+                <li class="mb-2">🚀 Launch Your Startup</li>
+              </ul>
+              <button class="bg-indigo-600 text-white font-bold py-2 px-4 mt-4 rounded focus:outline-none">Get Started for Free</button>
+            </div>
+          </div>
+          
+          <!-- Startup Engine Plan -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="text-center">
+              <h3 class="text-2xl font-bold">Startup Engine</h3>
+              <p class="text-xl text-indigo-600">Starting at $15/mo</p>
+              <ul class="list-none pl-0 mt-4">
+                <li class="mb-2">🌟 All Find Your Co-Founder Benefits</li>
+                <li class="mb-2">📚 Access to Startup Resources</li>
+                <li class="mb-2">💸 Exclusive Perks & Discounts</li>
+                <li class="mb-2">🎓 Live Classes & Workshops</li>
+                <li class="mb-2">🎛️ Founder Operating System</li>
+              </ul>
+              <button class="bg-indigo-600 text-white font-bold py-2 px-4 mt-4 rounded focus:outline-none">Upgrade to Startup Engine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- FAQs Section -->
+<section id="faqs" class="py-10 sm:py-16 lg:py-24 bg-gray-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-gray-900">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold">Frequently Asked <span class="text-indigo-600">Questions</span></h2>
+        <p class="text-xl mt-4">We've answered some common questions for you.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-xl font-bold mb-2">Is Find Your Co-Founder completely free?</h3>
+          <p>Yes, Find Your Co-Founder is a completely free service that helps you connect with potential co-founders for your startup.</p>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-2">What does Startup Engine offer?</h3>
+          <p>Startup Engine is a paid subscription service that offers access to startup resources, exclusive perks and discounts, live classes and workshops, and a founder operating system.</p>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-2">Can I upgrade to Startup Engine later?</h3>
+          <p>Yes, you can upgrade to Startup Engine at any time by selecting the Startup Engine plan and subscribing to the service.</p>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-2">How does the AI-powered matching work?</h3>
+          <p>Our AI algorithms analyze the information you provide in the survey to identify the best co-founder candidates based on your skills, experiences, and goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Final Action Section -->
+<section id="final-action" class="py-10 sm:py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-gray-900">
+      <div class="text-center">
+        <h2 class="text-3xl md:text-4xl font-bold">Ready to <span class="text-indigo-600">Find Your Perfect Co-Founder</span> and Supercharge Your Startup? 🚀</h2>
+        <p class="text-xl mt-4">Join now and let's build the future together!</p>
+        
+        <div class="mt-8">
+          <a href="#signup" class="inline-block px-6 py-3 text-xl font-bold text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out rounded-md">
+            Get Started for Free
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Footer Section -->
+<footer class="bg-indigo-600 py-10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-gray-100">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="w-full sm:w-auto mb-6 sm:mb-0">
+          <h3 class="text-2xl font-bold text-white mb-4">🚀 Find A Co-Founder</h3>
+          <p>&copy; 2023 Find A Co-Founder. All rights reserved.</p>
+        </div>
+        <nav class="w-full sm:w-auto">
+          <ul class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+            <li><a href="#about" class="hover:text-white">About</a></li>
+            <li><a href="#features" class="hover:text-white">Features</a></li>
+            <li><a href="#pricing" class="hover:text-white">Pricing</a></li>
+            <li><a href="#faq" class="hover:text-white">FAQ</a></li>
+            <li><a href="/contact" class="hover:text-white">Contact</a></li>
+            <li><a href="/terms" class="hover:text-white">Terms of Use</a></li>
+            <li><a href="/privacy" class="hover:text-white">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  
+  
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerButton = document.getElementById('hamburger-button');
+    const mainMenu = document.getElementById('main-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburgerButton.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    const step1Title = document.getElementById("step1-title");
+    const step2Title = document.getElementById("step2-title");
+    const step3Title = document.getElementById("step3-title");
+    const step1Content = document.getElementById("step1-content");
+    const step2Content = document.getElementById("step2-content");
+    const step3Content = document.getElementById("step3-content");
+    const step1Image = document.getElementById("step1-image");
+    const step2Image = document.getElementById("step2-image");
+    const step3Image = document.getElementById("step3-image");
+
+    function hideAllContent() {
+        step1Content.classList.add("hidden");
+        step2Content.classList.add("hidden");
+        step3Content.classList.add("hidden");
+        step1Image.classList.add("hidden");
+        step2Image.classList.add("hidden");
+        step3Image.classList.add("hidden");
+    }
+
+    step1Title.addEventListener("click", function () {
+        hideAllContent();
+        step1Content.classList.remove("hidden");
+        step1Image.classList.remove("hidden");
+    });
+
+    step2Title.addEventListener("click", function () {
+        hideAllContent();
+        step2Content.classList.remove("hidden");
+        step2Image.classList.remove("hidden");
+    });
+
+    step3Title.addEventListener("click", function () {
+        hideAllContent();
+        step3Content.classList.remove("hidden");
+        step3Image.classList.remove("hidden");
+    });
+
+    // Show step1 content and image on page load
+    step1Content.classList.remove("hidden");
+    step1Image.classList.remove("hidden");
+});
+
+</script>
+
+</html>
